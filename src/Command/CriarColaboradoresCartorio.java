@@ -54,24 +54,13 @@ public class CriarColaboradoresCartorio implements Command {
   		
   		us.CriarUsuarioComumEmpresa(usuario);
   		
-  		//ArrayList<Usuario> lista = new ArrayList<>();
-  		//lista.add(usuario);
-  		//session.setAttribute("lista", lista);
   		view = request.getRequestDispatcher("IndexCartorio.jsp");
   		
   		view.forward(request, response);
 
 
 	}
-	/*public int busca(Usuario usuario, ArrayList<Usuario> lista) {
-  		Usuario to;
-  		for(int i = 0; i < lista.size(); i++){
-  			to = lista.get(i);
-  			if(to.getId() == usuario.getId()){
-  				return i;
-  			}
-  		}
-  		return -1;*/
+	
   	}
 	
 
